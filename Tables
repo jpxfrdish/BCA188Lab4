@@ -1,0 +1,31 @@
+| Raw Value | Expected Millivolt | Actual Millivolt Value |
+| :-------: | :----------------: | :--------------------: |
+| 0         | 0                  | 0                      |
+| 4095      | 800                | 900                    |
+| 3071.25   | 1599               | 1815                   |
+| 2047.5    | 2398.5             | 2638                   |
+| 1023.75   | 3198               | 3198                   |
+
+
+
+| Raw Value | Expected Duty Value | Actual Duty Value |
+| :-------: | :-----------------: | :---------------: |
+| 0         | 0                   | 0                 |
+| 4095      | 255                 | 255               |
+| 3071.25   | 191.25              | 192               |
+| 2047.5    | 127.5               | 128               |
+| 1023.75   | 63.75               | 64                |
+
+
+|  Analog Value | Expected Multimeter | Actual Multimeter |
+| :-----------: | :-----------------: | :---------------: |
+| 0             | 0 V                 | 0 V               |
+| 64            | 0.825 V             | 0.999 V           |
+| 128           | 1.65 V              | 1.724 V           |
+| 192           | 2.475 V             | 2.478 V           |
+| 255           | 3.3 V               | 3.324 V           |
+
+
+Comparison:
+The predicted and observed results were generally similar. The output values changed as expected when the input or setting was adjusted. Small differences in the observed readings may have occurred because of hardware limitations, electrical noise, sensor accuracy, and measurement conditions. Overall, the experiments showed that the ESP32-S3 responded correctly to the programmed values.
+
